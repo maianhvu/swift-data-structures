@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		179AF412200D9C95005B4051 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179AF411200D9C95005B4051 /* Node.swift */; };
 		412A0AA91A5FDEB5002B6B25 /* Dictionary+TraversableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A0AA81A5FDEB5002B6B25 /* Dictionary+TraversableTests.swift */; };
 		412A0AAB1A5FDFAA002B6B25 /* DepthFirstOrderGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A0AAA1A5FDFAA002B6B25 /* DepthFirstOrderGeneratorTests.swift */; };
 		413DC05F1A5F62C300CC4AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413DC05E1A5F62C300CC4AC3 /* AppDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		179AF411200D9C95005B4051 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		412A0AA81A5FDEB5002B6B25 /* Dictionary+TraversableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+TraversableTests.swift"; sourceTree = "<group>"; };
 		412A0AAA1A5FDFAA002B6B25 /* DepthFirstOrderGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthFirstOrderGeneratorTests.swift; sourceTree = "<group>"; };
 		413DC0591A5F62C300CC4AC3 /* DataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 		413DC05B1A5F62C300CC4AC3 /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				179AF411200D9C95005B4051 /* Node.swift */,
 				413DC0801A5F62D300CC4AC3 /* Queue.swift */,
 				413DC0811A5F62D300CC4AC3 /* Stack.swift */,
 				413DC07E1A5F62D300CC4AC3 /* BreadthFirstOrderGenerator.swift */,
@@ -258,6 +261,7 @@
 				413DC0861A5F62D300CC4AC3 /* Queue.swift in Sources */,
 				413DC0841A5F62D300CC4AC3 /* DepthFirstOrderGenerator.swift in Sources */,
 				413DC0821A5F62D300CC4AC3 /* BreadthFirstOrderGenerator.swift in Sources */,
+				179AF412200D9C95005B4051 /* Node.swift in Sources */,
 				413DC0951A5FC44E00CC4AC3 /* Dictionary+Traversable.swift in Sources */,
 				413DC0611A5F62C300CC4AC3 /* ViewController.swift in Sources */,
 				413DC0881A5F62D300CC4AC3 /* Stack.swift in Sources */,
