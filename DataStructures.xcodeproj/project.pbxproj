@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		179AF412200D9C95005B4051 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179AF411200D9C95005B4051 /* Node.swift */; };
+		179AF4152011B4E2005B4051 /* graph_linkedlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 179AF4132011B4DC005B4051 /* graph_linkedlist.plist */; };
 		412A0AA91A5FDEB5002B6B25 /* Dictionary+TraversableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A0AA81A5FDEB5002B6B25 /* Dictionary+TraversableTests.swift */; };
 		412A0AAB1A5FDFAA002B6B25 /* DepthFirstOrderGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412A0AAA1A5FDFAA002B6B25 /* DepthFirstOrderGeneratorTests.swift */; };
 		413DC05F1A5F62C300CC4AC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413DC05E1A5F62C300CC4AC3 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		179AF411200D9C95005B4051 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		179AF4132011B4DC005B4051 /* graph_linkedlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = graph_linkedlist.plist; sourceTree = "<group>"; };
 		412A0AA81A5FDEB5002B6B25 /* Dictionary+TraversableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+TraversableTests.swift"; sourceTree = "<group>"; };
 		412A0AAA1A5FDFAA002B6B25 /* DepthFirstOrderGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepthFirstOrderGeneratorTests.swift; sourceTree = "<group>"; };
 		413DC0591A5F62C300CC4AC3 /* DataStructures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStructures.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,6 +147,7 @@
 			children = (
 				6DD36A2E1A60E90800746BF6 /* graph_cycle.plist */,
 				6DD36A301A60E90800746BF6 /* graph_example.plist */,
+				179AF4132011B4DC005B4051 /* graph_linkedlist.plist */,
 				765CFB9D1C4BEA0100FA2E0E /* graph_empty.plist */,
 				413DC0731A5F62C300CC4AC3 /* Info.plist */,
 			);
@@ -238,6 +241,7 @@
 				765CFBA01C4BEAD400FA2E0E /* graph_empty.plist in Resources */,
 				765CFB9A1C37DE7600FA2E0E /* graph_cycle.plist in Resources */,
 				765CFB9B1C37DE7600FA2E0E /* graph_example.plist in Resources */,
+				179AF4152011B4E2005B4051 /* graph_linkedlist.plist in Resources */,
 				413DC0641A5F62C300CC4AC3 /* Main.storyboard in Resources */,
 				413DC0691A5F62C300CC4AC3 /* LaunchScreen.xib in Resources */,
 				413DC0661A5F62C300CC4AC3 /* Images.xcassets in Resources */,
