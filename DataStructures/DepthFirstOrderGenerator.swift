@@ -10,12 +10,18 @@
 struct DepthFirstOrderGenerator<Key: Hashable, Value: Collection>: IteratorProtocol,
     Sequence where Value.Iterator.Element == Key {
 
+    private let graph: [Key: Value]
+    private var frontier = Stack<Key>()
+    private var visited = Set<Key>()
+
     /// Constructs a `DepthFirstOrderGenerator` with the given graph and start
     /// node.
     /// - Parameters:
     ///   - graph: A dictionary of node to adjacency list pairs.
     ///   - start: The start node.
     init?(graph: [Key: Value], start: Key) {
+        self.graph = graph
+        self.frontier.push(start)
     }
 
     func makeIterator() -> DepthFirstOrderGenerator<Key, Value> {
@@ -23,7 +29,19 @@ struct DepthFirstOrderGenerator<Key: Hashable, Value: Collection>: IteratorProto
     }
 
     mutating func next() -> Key? {
-        // TODO: Replace/remove the following line in your implementation.
+        while let key = frontier.pop() {
+            if visited.contains(key) {
+                continue
+            }
+            // Visit the node
+            visited.insert(key)
+            // Construct the frontier
+            graph[key]?
+                .filter { !visited.contains($0) }
+                .reversed() // Technically this is not required
+                .forEach { frontier.push($0) }
+            return key
+        }
         return nil
     }
 }
