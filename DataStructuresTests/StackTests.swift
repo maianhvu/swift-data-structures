@@ -13,11 +13,22 @@ class StackTests: XCTestCase {
     }
 
     func testPop() {
-        // TODO: Fill in your test code here.
+        var stack = Stack<Int>()
+        stack.push(2)
+        stack.push(3)
+
+        XCTAssertEqual(stack.pop(), 3, "The item is not popped correctly!")
+        XCTAssertEqual(stack.count, 1, "The stack size is not correct")
     }
 
     func testPeek() {
-        // TODO: Fill in your test code here.
+        var stack = Stack<Int>()
+        stack.push(4)
+
+        XCTAssertEqual(stack.peek(), 4,
+                       "The item is not peeked correctly!")
+        XCTAssertEqual(stack.count, 1,
+                       "The stack size is not correct")
     }
 
     func testCount() {
@@ -25,18 +36,36 @@ class StackTests: XCTestCase {
         stack.push(1)
         stack.push(2)
         stack.push(3)
-        XCTAssertEqual(stack.count, 3, "The stack's length is not correct!");
+        XCTAssertEqual(stack.count, 3,
+                       "The stack's length is not correct!")
     }
 
-    func testIsEmpty() {
-        // TODO: Fill in your test code here.
+    func testIsEmptyUponInit() {
+        let stack = Stack<Int>()
+        XCTAssertTrue(stack.isEmpty,
+                      "The stack should be empty upon initialization!")
+    }
+
+    func testIsEmptyAfterPopping () {
+        var stack = Stack<Int>()
+        stack.push(1)
+        _ = stack.pop()
+        XCTAssertTrue(stack.isEmpty,
+                      "The stack should be empty after popping all elements!")
     }
 
     func testRemoveAll() {
-        // TODO: Fill in your test code here.
+        var stack = Stack<Int>()
+        (1...10).forEach { stack.push($0) }
+        stack.removeAll()
+        XCTAssertTrue(stack.isEmpty,
+                      "The stack should be empty after removing all elements")
     }
 
     func testToArray() {
-        // TODO: Fill in your test code here.
+        var stack = Stack<Int>()
+        (1...5).forEach { stack.push($0) }
+        XCTAssertEqual(stack.toArray(), [5, 4, 3, 2, 1],
+                       "The stack array is incorrect!")
     }
 }
