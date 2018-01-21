@@ -38,7 +38,7 @@ struct DepthFirstOrderGenerator<Key: Hashable, Value: Collection>: IteratorProto
             // Construct the frontier
             graph[key]?
                 .filter { !visited.contains($0) }
-                .reversed() // Technically this is not required
+                .reversed() // For pre-order traversal
                 .forEach { frontier.push($0) }
             return key
         }
