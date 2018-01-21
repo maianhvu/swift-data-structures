@@ -1,11 +1,11 @@
 CS3217 Problem Set 1
 ==
 
-**Name:** Your name
+**Name:** Mai Anh Vu
 
-**Matric No:** Your matric no
+**Matric No:** A0127046L
 
-**Tutor:** Your tutor's name
+**Tutor:** Zhang Yijiang
 
 ## Instructions for Students
 
@@ -22,10 +22,16 @@ CS3217 Problem Set 1
 
 ## Problem 1: Swift Collections
 
-Your answer here
+The `Hashable` protocol requires the `Int` `hashValue` variable from objects
+that conform to it. The `Dictionary` will need this variable for its internal
+implementation of hashing. Without it (and the conformation to the `Hashable`
+protocol), the compiler will flag an error.
 
 ## Problem 3: Graph Traversal
 
 ## Problem 3.3
 
-Your answer here
+Returning `nil` is preferred to throwing an exception when the absence of the
+return value is expected or insignificant to the logic of the program.
+Furthermore, it's even more convenient in Swift to return `nil` when dealing with
+such values, thanks to the native support for optionals.
