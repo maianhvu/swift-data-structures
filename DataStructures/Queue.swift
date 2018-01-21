@@ -17,9 +17,9 @@ struct Queue<T> {
     /// Adds an element to the tail of the queue.
     /// - Parameter item: The element to be added to the queue
     mutating func enqueue(_ item: T) {
-        if let unwrappedTail = self.tail {
+        if let unwrappedTail = tail {
             unwrappedTail.next = Node(item)
-            self.tail = unwrappedTail.next
+            tail = unwrappedTail.next
         } else {
             tail = Node(item)
         }
@@ -31,8 +31,12 @@ struct Queue<T> {
     /// Removes an element from the head of the queue and return it.
     /// - Returns: item at the head of the queue
     mutating func dequeue() -> T? {
-        if let unwrappedHead = self.head {
-            self.head = unwrappedHead.next
+        if let unwrappedHead = head {
+            head = unwrappedHead.next
+            // If head becomes nil then let tail be nil too
+            if head == nil {
+                tail = nil
+            }
             return unwrappedHead.value
         } else {
             return nil
