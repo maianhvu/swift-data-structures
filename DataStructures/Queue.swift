@@ -57,7 +57,6 @@ struct Queue<T> {
         return itemCount
     }
 
-
     /// Returns, but does not remove, the element at the head of the queue.
     /// - Returns: item at the head of the queue
     func peek() -> T? {
