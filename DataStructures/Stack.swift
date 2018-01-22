@@ -8,6 +8,7 @@
  */
 struct Stack<T> {
 
+    // TUTOR: Prefer items: [T] = [], in accordance to style guide
     private var items = [T]()
 
     /// Adds an element to the top of the stack.
@@ -19,6 +20,7 @@ struct Stack<T> {
     /// Removes the element at the top of the stack and return it.
     /// - Returns: element at the top of the stack
     mutating func pop() -> T? {
+        // TUTOR: [-0] Style - use guard-else here instead (deducted in Queue)
         if items.isEmpty {
             return nil
         }
