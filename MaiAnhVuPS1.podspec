@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MaiAnhVuPS1'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'CS3217 Abstract Data Structures'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Swift Abstract Data Structures.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'maianhvu' => 'me@maianhvu.com' }
-  s.source           = { :git => 'https://github.com/maianhvu/swift-data-structures.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/maianhvu/swift-data-structures.git', :tag => 'v' + s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
