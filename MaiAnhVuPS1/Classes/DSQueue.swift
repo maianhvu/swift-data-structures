@@ -13,10 +13,14 @@ public struct DSQueue<T> {
     //-------------------------------------------------------------------------
     private var head: DSNode<T>?
     private var tail: DSNode<T>?
+    
+    public init() {
+        // Do nothing
+    }
 
     /// Adds an element to the tail of the queue.
     /// - Parameter item: The element to be added to the queue
-    mutating func enqueue(_ item: T) {
+    public mutating func enqueue(_ item: T) {
         // TUTOR: `let tail = tail` is fine, since we have no use of the original optional value 
         //        inside the if-let block, by convention we can use the same name. Also it would be
         //        clearer to create and set the new tail node outside the if-let, since that is
@@ -40,7 +44,7 @@ public struct DSQueue<T> {
 
     /// Removes an element from the head of the queue and return it.
     /// - Returns: item at the head of the queue
-    mutating func dequeue() -> T? {
+    public mutating func dequeue() -> T? {
         // TUTOR: [-1] Style - use guard-let here instead
         if let unwrappedHead = head {
             head = unwrappedHead.next
@@ -55,7 +59,7 @@ public struct DSQueue<T> {
     }
 
     /// The number of elements currently in the queue.
-    var count: Int {
+    public var count: Int {
         // TUTOR: It is more efficient to keep track of count separately since most users would probably assume 
         //        `.count` to be O(1) time. You can use a comment to document the complexity of this property.
         //        See: https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/MarkupFunctionality.html
@@ -73,17 +77,17 @@ public struct DSQueue<T> {
 
     /// Returns, but does not remove, the element at the head of the queue.
     /// - Returns: item at the head of the queue
-    func peek() -> T? {
+    public func peek() -> T? {
          return self.head?.value
     }
 
     /// Whether the queue is empty.
-    var isEmpty: Bool {
+    public var isEmpty: Bool {
         return head == nil || tail == nil
     }
 
     /// Removes all elements in the queue.
-    mutating func removeAll() {
+    public mutating func removeAll() {
         head = nil
         tail = nil
     }
@@ -91,7 +95,7 @@ public struct DSQueue<T> {
     /// Returns an array of the elements in their respective dequeue order, i.e.
     /// first element in the array is the first element to be dequeued.
     /// - Returns: array of elements in their respective dequeue order
-    func toArray() -> [T] {
+    public func toArray() -> [T] {
         var node = head
         var array = [T]()
         while node != nil, let unwrappedNode = node {
