@@ -6,7 +6,7 @@
  - Authors: CS3217
  - Date: 2018
  */
-struct DSQueue<T> {
+public struct DSQueue<T> {
 
     //-------------------------------------------------------------------------
     // MARK: - Properties

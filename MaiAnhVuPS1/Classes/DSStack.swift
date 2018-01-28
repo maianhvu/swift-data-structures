@@ -6,7 +6,7 @@
  - Authors: CS3217
  - Date: 2018
  */
-struct DSStack<T> {
+public struct DSStack<T> {
 
     // TUTOR: Prefer items: [T] = [], in accordance to style guide
     private var items = [T]()
