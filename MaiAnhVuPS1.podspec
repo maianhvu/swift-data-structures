@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MaiAnhVuPS1'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'CS3217 Abstract Data Structures'
 
 # This description is used to generate tags and improve search results.

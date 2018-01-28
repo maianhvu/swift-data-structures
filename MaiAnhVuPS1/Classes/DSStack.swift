@@ -9,17 +9,21 @@
 public struct DSStack<T> {
 
     // TUTOR: Prefer items: [T] = [], in accordance to style guide
-    private var items = [T]()
+    private var items: [T]
+    
+    public init() {
+        self.items = []
+    }
 
     /// Adds an element to the top of the stack.
     /// - Parameter item: The element to be added to the stack
-    mutating func push(_ item: T) {
+    public mutating func push(_ item: T) {
         items.append(item)
     }
 
     /// Removes the element at the top of the stack and return it.
     /// - Returns: element at the top of the stack
-    mutating func pop() -> T? {
+    public mutating func pop() -> T? {
         // TUTOR: [-0] Style - use guard-else here instead (deducted in Queue)
         if items.isEmpty {
             return nil
@@ -29,29 +33,29 @@ public struct DSStack<T> {
 
     /// Returns, but does not remove, the element at the top of the stack.
     /// - Returns: element at the top of the stack
-    func peek() -> T? {
+    public func peek() -> T? {
         return items.last
     }
 
     /// The number of elements currently in the stack.
-    var count: Int {
+    public var count: Int {
         return items.count
     }
 
     /// Whether the stack is empty.
-    var isEmpty: Bool {
+    public var isEmpty: Bool {
         return items.isEmpty
     }
 
     /// Removes all elements in the stack.
-    mutating func removeAll() {
+    public mutating func removeAll() {
         items.removeAll()
     }
 
     /// Returns an array of the elements in their respective pop order, i.e.
     /// first element in the array is the first element to be popped.
     /// - Returns: array of elements in their respective pop order
-    func toArray() -> [T] {
+    public func toArray() -> [T] {
         return items.reversed()
     }
 }
