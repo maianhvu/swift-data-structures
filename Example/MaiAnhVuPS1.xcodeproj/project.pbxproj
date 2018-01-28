@@ -41,12 +41,12 @@
 		607FACE51AFB9204008FA782 /* MaiAnhVuPS1_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaiAnhVuPS1_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		637491157048E064D045178C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		637491157048E064D045178C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		79CD9AA1895600188A2E6A30 /* Pods_MaiAnhVuPS1_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaiAnhVuPS1_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B47D8D375989CB6CB0DF4C10 /* Pods-MaiAnhVuPS1_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaiAnhVuPS1_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MaiAnhVuPS1_Tests/Pods-MaiAnhVuPS1_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE0FFAED98F706026999A88D /* Pods-MaiAnhVuPS1_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaiAnhVuPS1_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-MaiAnhVuPS1_Example/Pods-MaiAnhVuPS1_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C8C051B52AC488149496410B /* MaiAnhVuPS1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MaiAnhVuPS1.podspec; path = ../MaiAnhVuPS1.podspec; sourceTree = "<group>"; };
-		E2E2C2F1005C9526346BF317 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C8C051B52AC488149496410B /* MaiAnhVuPS1.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MaiAnhVuPS1.podspec; path = ../MaiAnhVuPS1.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		E2E2C2F1005C9526346BF317 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

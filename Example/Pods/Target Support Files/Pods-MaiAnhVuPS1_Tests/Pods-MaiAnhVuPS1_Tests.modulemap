@@ -1,0 +1,6 @@
+framework module Pods_MaiAnhVuPS1_Tests {
+  umbrella header "Pods-MaiAnhVuPS1_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
