@@ -12,6 +12,7 @@ struct DepthFirstOrderGenerator<Key: Hashable, Value: Collection>: IteratorProto
 
     private let graph: [Key: Value]
     private var frontier = Stack<Key>()
+    // TUTOR: Prefer visited: Set<Key> = [] in accordance to style guide
     private var visited = Set<Key>()
 
     /// Constructs a `DepthFirstOrderGenerator` with the given graph and start
@@ -20,6 +21,7 @@ struct DepthFirstOrderGenerator<Key: Hashable, Value: Collection>: IteratorProto
     ///   - graph: A dictionary of node to adjacency list pairs.
     ///   - start: The start node.
     init?(graph: [Key: Value], start: Key) {
+        // TUTOR: [-2] Implementation error - not checking for `start` not in `graph`
         self.graph = graph
         self.frontier.push(start)
     }
