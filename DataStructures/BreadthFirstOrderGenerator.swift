@@ -11,7 +11,7 @@ struct BreadthFirstOrderGenerator<Key: Hashable, Value: Collection>: IteratorPro
     Sequence where Value.Iterator.Element == Key {
 
     private let graph: [Key: Value]
-    private var frontier = Queue<Key>()
+    private var frontier = DSQueue<Key>()
     private var visited = Set<Key>()
 
     /// Constructs a `BreadthFirstOrderGenerator` with the given graph and start

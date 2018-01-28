@@ -6,13 +6,13 @@
  - Authors: CS3217
  - Date: 2018
  */
-struct Queue<T> {
+struct DSQueue<T> {
 
     //-------------------------------------------------------------------------
     // MARK: - Properties
     //-------------------------------------------------------------------------
-    private var head: Node<T>?
-    private var tail: Node<T>?
+    private var head: DSNode<T>?
+    private var tail: DSNode<T>?
 
     /// Adds an element to the tail of the queue.
     /// - Parameter item: The element to be added to the queue
@@ -28,10 +28,10 @@ struct Queue<T> {
         //        }
         //        tail = newTail
         if let unwrappedTail = tail {
-            unwrappedTail.next = Node(item)
+            unwrappedTail.next = DSNode(item)
             tail = unwrappedTail.next
         } else {
-            tail = Node(item)
+            tail = DSNode(item)
         }
         if head == nil {
             head = tail

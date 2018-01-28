@@ -11,7 +11,7 @@ struct DepthFirstOrderGenerator<Key: Hashable, Value: Collection>: IteratorProto
     Sequence where Value.Iterator.Element == Key {
 
     private let graph: [Key: Value]
-    private var frontier = Stack<Key>()
+    private var frontier = DSStack<Key>()
     // TUTOR: Prefer visited: Set<Key> = [] in accordance to style guide
     private var visited = Set<Key>()
 
