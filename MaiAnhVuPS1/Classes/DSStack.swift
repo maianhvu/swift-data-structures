@@ -8,7 +8,6 @@
  */
 public struct DSStack<T> {
 
-    // TUTOR: Prefer items: [T] = [], in accordance to style guide
     private var items: [T]
     
     public init() {
@@ -24,7 +23,6 @@ public struct DSStack<T> {
     /// Removes the element at the top of the stack and return it.
     /// - Returns: element at the top of the stack
     public mutating func pop() -> T? {
-        // TUTOR: [-0] Style - use guard-else here instead (deducted in Queue)
         if items.isEmpty {
             return nil
         }

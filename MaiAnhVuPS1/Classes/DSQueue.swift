@@ -21,16 +21,6 @@ public struct DSQueue<T> {
     /// Adds an element to the tail of the queue.
     /// - Parameter item: The element to be added to the queue
     public mutating func enqueue(_ item: T) {
-        // TUTOR: `let tail = tail` is fine, since we have no use of the original optional value 
-        //        inside the if-let block, by convention we can use the same name. Also it would be
-        //        clearer to create and set the new tail node outside the if-let, since that is
-        //        duplicated across both branches
-        //
-        //        let newTail = Node(tail)
-        //        if let tail = oldTail {
-        //            oldTail.next = newTail
-        //        }
-        //        tail = newTail
         if let unwrappedTail = tail {
             unwrappedTail.next = DSNode(item)
             tail = unwrappedTail.next
@@ -45,7 +35,6 @@ public struct DSQueue<T> {
     /// Removes an element from the head of the queue and return it.
     /// - Returns: item at the head of the queue
     public mutating func dequeue() -> T? {
-        // TUTOR: [-1] Style - use guard-let here instead
         if let unwrappedHead = head {
             head = unwrappedHead.next
             // If head becomes nil then let tail be nil too
@@ -60,9 +49,6 @@ public struct DSQueue<T> {
 
     /// The number of elements currently in the queue.
     public var count: Int {
-        // TUTOR: It is more efficient to keep track of count separately since most users would probably assume 
-        //        `.count` to be O(1) time. You can use a comment to document the complexity of this property.
-        //        See: https://developer.apple.com/library/content/documentation/Xcode/Reference/xcode_markup_formatting_ref/MarkupFunctionality.html
         if head == nil {
             return 0
         }
